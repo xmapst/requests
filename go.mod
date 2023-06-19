@@ -5,7 +5,6 @@ go 1.20
 require (
 	github.com/andybalholm/brotli v1.0.5
 	github.com/dlclark/regexp2 v1.10.0
-	github.com/google/uuid v1.3.0
 	github.com/json-iterator/go v1.1.12
 	github.com/refraction-networking/utls v1.3.2
 	github.com/tidwall/gjson v1.14.4
@@ -13,7 +12,7 @@ require (
 	golang.org/x/image v0.7.0
 	golang.org/x/net v0.10.0
 	golang.org/x/term v0.8.0
-	golang.org/x/text v0.9.0
+	golang.org/x/text v0.10.0
 	nhooyr.io/websocket v1.8.7
 )
 
