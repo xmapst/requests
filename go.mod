@@ -9,7 +9,7 @@ require (
 	github.com/refraction-networking/utls v1.3.2
 	github.com/tidwall/gjson v1.14.4
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
-	golang.org/x/image v0.7.0
+	golang.org/x/image v0.8.0
 	golang.org/x/net v0.10.0
 	golang.org/x/term v0.8.0
 	golang.org/x/text v0.10.0
