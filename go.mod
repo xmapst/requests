@@ -3,7 +3,7 @@ module github.com/xmapst/requests
 go 1.20
 
 require (
-	github.com/andybalholm/brotli v1.0.5
+	github.com/andybalholm/brotli v1.0.6
 	github.com/dlclark/regexp2 v1.10.0
 	github.com/json-iterator/go v1.1.12
 	github.com/refraction-networking/utls v1.5.3
