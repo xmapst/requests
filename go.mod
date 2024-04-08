@@ -13,7 +13,7 @@ require (
 	golang.org/x/net v0.22.0
 	golang.org/x/term v0.18.0
 	golang.org/x/text v0.14.0
-	nhooyr.io/websocket v1.8.10
+	nhooyr.io/websocket v1.8.11
 )
 
 require (
