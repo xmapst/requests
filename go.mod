@@ -6,7 +6,7 @@ require (
 	github.com/andybalholm/brotli v1.1.0
 	github.com/dlclark/regexp2 v1.11.0
 	github.com/json-iterator/go v1.1.12
-	github.com/refraction-networking/utls v1.6.4
+	github.com/refraction-networking/utls v1.6.6
 	github.com/tidwall/gjson v1.17.1
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1
 	golang.org/x/image v0.15.0
