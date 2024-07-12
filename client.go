@@ -114,7 +114,7 @@ func NewClientWithContext(preCtx context.Context, clientOptinos ...ClientOption)
 		ctx:           ctx,
 		cnl:           cnl,
 		client:        &client,
-		baseTransport: &baseTransport,
+		baseTransport: baseTransport,
 		disAlive:      sessionOption.DisAlive,
 		disCookie:     sessionOption.DisCookie,
 		ja3:           sessionOption.Ja3,

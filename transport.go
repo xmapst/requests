@@ -9,8 +9,8 @@ import (
 	"github.com/xmapst/requests/http2"
 )
 
-func newHttpTransport(sessionOption ClientOption, dialCli *DialClient) http.Transport {
-	t := http.Transport{
+func newHttpTransport(sessionOption ClientOption, dialCli *DialClient) *http.Transport {
+	t := &http.Transport{
 		MaxIdleConns:        655350,
 		MaxConnsPerHost:     655350,
 		MaxIdleConnsPerHost: 655350,

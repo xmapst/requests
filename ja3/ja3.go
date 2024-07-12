@@ -15,8 +15,9 @@ import (
 	"unsafe"
 
 	utls "github.com/refraction-networking/utls"
-	"github.com/xmapst/requests/tools"
 	"golang.org/x/exp/slices"
+
+	"github.com/xmapst/requests/tools"
 )
 
 type ClientHelloId = utls.ClientHelloID
@@ -296,13 +297,13 @@ func getExtensionWithId(extensionId uint16) utls.TLSExtension {
 		return &utls.SessionTicketExtension{}
 	case 41:
 		return &utls.FakePreSharedKeyExtension{
-			PskIdentities: []utls.PskIdentity{ // must set identity
+			Identities: []utls.PskIdentity{ // must set identity
 				{
 					Label:               []byte("Request"), // change this
 					ObfuscatedTicketAge: 1,                 // change this
 				},
 			},
-			PskBinders: [][]byte{ // must set psk binders
+			Binders: [][]byte{ // must set psk binders
 				{
 					0, 0, 0, 0, 0, 0, 0, 0,
 					0, 0, 0, 0, 0, 0, 0, 0,
@@ -397,17 +398,17 @@ func cloneExtension(extension utls.TLSExtension) (utls.TLSExtension, bool) {
 			SupportedSignatureAlgorithms: copySlices(ext.SupportedSignatureAlgorithms),
 		}, true
 	case *utls.SessionTicketExtension:
-		var session *utls.ClientSessionState
+		var session *utls.SessionState
 		if ext.Session != nil {
-			session = &utls.ClientSessionState{}
+			session = &utls.SessionState{}
 		}
 		return &utls.SessionTicketExtension{
 			Session: session,
 		}, true
 	case *utls.FakePreSharedKeyExtension:
 		return &utls.FakePreSharedKeyExtension{
-			PskIdentities: copySlices(ext.PskIdentities),
-			PskBinders:    copySlicess(ext.PskBinders),
+			Identities: copySlices(ext.Identities),
+			Binders:    copySlicess(ext.Binders),
 		}, true
 	case *utls.CookieExtension:
 		return &utls.CookieExtension{
