@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/andybalholm/brotli v1.1.0
-	github.com/dlclark/regexp2 v1.11.2
+	github.com/dlclark/regexp2 v1.11.4
 	github.com/json-iterator/go v1.1.12
 	github.com/refraction-networking/utls v1.6.7
 	github.com/tidwall/gjson v1.17.1
