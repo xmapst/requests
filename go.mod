@@ -7,7 +7,7 @@ require (
 	github.com/dlclark/regexp2 v1.11.2
 	github.com/json-iterator/go v1.1.12
 	github.com/refraction-networking/utls v1.6.7
-	github.com/tidwall/gjson v1.17.1
+	github.com/tidwall/gjson v1.17.3
 	golang.org/x/exp v0.0.0-20240707233637-46b078467d37
 	golang.org/x/image v0.18.0
 	golang.org/x/net v0.27.0
