@@ -12,7 +12,7 @@ require (
 	golang.org/x/image v0.18.0
 	golang.org/x/net v0.27.0
 	golang.org/x/term v0.22.0
-	golang.org/x/text v0.16.0
+	golang.org/x/text v0.17.0
 	nhooyr.io/websocket v1.8.17
 )
 
